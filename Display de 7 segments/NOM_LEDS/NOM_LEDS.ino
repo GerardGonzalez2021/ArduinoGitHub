@@ -16,11 +16,16 @@
   const byte segE = 9;          
   const byte segF = 10;         
   const byte segG = 11;  
-  int temps = 200; 
+  int temps = 500; 
 //************************ SETUP ***************************
 void setup() {
- pinMode(segA, OUTPUT)   
-
+ pinMode(segA, OUTPUT);   
+ pinMode(segB, OUTPUT);
+ pinMode(segC, OUTPUT);
+ pinMode(segD, OUTPUT);
+ pinMode(segE, OUTPUT);
+ pinMode(segF, OUTPUT);
+ pinMode(segG, OUTPUT);
 }
 //************************* LOOP ***************************
 void loop() {
@@ -32,7 +37,7 @@ void loop() {
   digitalWrite(segE, LOW);
   digitalWrite(segF, HIGH);
   digitalWrite(segG, HIGH);
-delay (500);
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -40,7 +45,7 @@ delay (500);
   digitalWrite(segE, LOW);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
-  delay (500);
+
   // E
   digitalWrite(segA, HIGH);
   digitalWrite(segB, LOW);
@@ -49,7 +54,7 @@ delay (500);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, HIGH);
   digitalWrite(segG, HIGH);
-delay (500);
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -57,7 +62,7 @@ delay (500);
   digitalWrite(segE, LOW);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
-  delay (500);
+
   // R
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
@@ -66,7 +71,7 @@ delay (500);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, LOW);
   digitalWrite(segG, HIGH);
-
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -74,6 +79,7 @@ delay (500);
   digitalWrite(segE, LOW);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
+  
   // A
   digitalWrite(segA, HIGH);
   digitalWrite(segB, HIGH);
@@ -82,7 +88,7 @@ delay (500);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, HIGH);
   digitalWrite(segG, HIGH);
-
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -99,7 +105,7 @@ delay (500);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, LOW);
   digitalWrite(segG, HIGH);
-
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -116,7 +122,7 @@ delay (500);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, LOW);
   digitalWrite(segG, HIGH);
-
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -124,6 +130,8 @@ delay (500);
   digitalWrite(segE, LOW);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
+
+  
     // B11110110,Representa la g 
     // B10011110,Representa la e 
     // B00001010,Representa la r
