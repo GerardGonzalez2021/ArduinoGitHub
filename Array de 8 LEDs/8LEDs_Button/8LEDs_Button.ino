@@ -9,9 +9,6 @@
 //*********************** INCLUDE **************************
 
 //********************** VARIABLES *************************
-const byte led0 = 5;         
-const byte buttonPin = 2;  
-byte buttonState = 0;  
 const byte led0 = 5;          // donar nom al pin 5 de l’Arduino
 const byte led1 = 6;          // donar nom al pin 6 de l’Arduino
 const byte led2 = 7;          // donar nom al pin 7 de l’Arduino
@@ -25,9 +22,6 @@ byte buttonState = 0;         // per guardar l’estat en que és troba el butto
 
 //************************ SETUP ***************************
 void setup() {
-  
-  pinMode(led0, OUTPUT);     
-  pinMode(buttonPin, INPUT);
 
   pinMode(led0, OUTPUT);     // definir el pin 5 com una sortida
   pinMode(led1, OUTPUT);     // definir el pin 6 com una sortida
@@ -39,17 +33,58 @@ void setup() {
   pinMode(led7, OUTPUT);     // definir el pin 12 com una sortida
   pinMode(buttonPin, INPUT); // definir el pin 2 com una entrada  
 }
-}
 //************************* LOOP ***************************
 void loop() {
-   buttonState = digitalRead(buttonPin);  //llegir l’estat del button i gardar-lo
-  if (buttonState == 0)  //polsador premut, muntat amb Pull-up
+   buttonState = digitalRead(buttonPin);  
+  if (buttonState == 0)  
   {
-digitalWrite(led0, HIGH);
+  digitalWrite(led0, HIGH);    // posar a 5V el pin 5
+  digitalWrite(led1, HIGH);    // posar a 5V el pin 6
+  digitalWrite(led2, HIGH);    // posar a 5V el pin 7
+  digitalWrite(led3, HIGH);    // posar a 5V el pin 8
+  digitalWrite(led4, HIGH);    // posar a 5V el pin 9
+  digitalWrite(led5, HIGH);    // posar a 5V el pin 10
+  digitalWrite(led6, HIGH);    // posar a 5V el pin 11
+  digitalWrite(led7, HIGH);    // posar a 5V el pin 12
+  
+  delay(500);                  // es queden leds 500ms encesos
+  
+  digitalWrite(led0, LOW);     // posar a 0V el pin 5
+  digitalWrite(led1, LOW);     // posar a 0V el pin 6
+  digitalWrite(led2, LOW);     // posar a 0V el pin 7
+  digitalWrite(led3, LOW);     // posar a 0V el pin 8
+  digitalWrite(led4, LOW);     // posar a 0V el pin 9
+  digitalWrite(led5, LOW);     // posar a 0V el pin 10
+  digitalWrite(led6, LOW);     // posar a 0V el pin 11
+  digitalWrite(led7, LOW);     // posar a 0V el pin 12
+  
+  delay(500);                  // es queden leds 500ms apagats
+
         }
           else   //polsador no premut, muntat amb Pull-up
           {
-digitalWrite(led0, LOW);
+  digitalWrite(led0, HIGH);    // posar a 5V el pin 5
+  digitalWrite(led1, LOW);    // posar a 5V el pin 6
+  digitalWrite(led2, HIGH);    // posar a 5V el pin 7
+  digitalWrite(led3, LOW);    // posar a 5V el pin 8
+  digitalWrite(led4, HIGH);    // posar a 5V el pin 9
+  digitalWrite(led5, LOW);    // posar a 5V el pin 10
+  digitalWrite(led6, HIGH);    // posar a 5V el pin 11
+  digitalWrite(led7, LOW);    // posar a 5V el pin 12
+  
+  delay(500);                  // es queden leds 500ms encesos
+  
+  digitalWrite(led0, LOW);     // posar a 0V el pin 5
+  digitalWrite(led1, HIGH);     // posar a 0V el pin 6
+  digitalWrite(led2, LOW);     // posar a 0V el pin 7
+  digitalWrite(led3, HIGH);     // posar a 0V el pin 8
+  digitalWrite(led4, LOW);     // posar a 0V el pin 9
+  digitalWrite(led5, HIGH);     // posar a 0V el pin 10
+  digitalWrite(led6, LOW);     // posar a 0V el pin 11
+  digitalWrite(led7, HIGH);     // posar a 0V el pin 12
+  
+  delay(500);                  // es queden leds 500ms apagats
+
           }
           delay(200);  //per no estar llegint button molt ràpid
 
