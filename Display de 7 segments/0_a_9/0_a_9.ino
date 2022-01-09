@@ -29,31 +29,14 @@ void setup() {
 }
 //************************* LOOP ***************************
 void loop() {
-  // G
+  // 0
   digitalWrite(segA, HIGH);
   digitalWrite(segB, HIGH);
   digitalWrite(segC, HIGH);
   digitalWrite(segD, HIGH);
-  digitalWrite(segE, LOW);
-  digitalWrite(segF, HIGH);
-  digitalWrite(segG, HIGH);
-delay (temps);
-  digitalWrite(segA, LOW);
-  digitalWrite(segB, LOW);
-  digitalWrite(segC, LOW);
-  digitalWrite(segD, LOW);
-  digitalWrite(segE, LOW);
-  digitalWrite(segF, LOW);
-  digitalWrite(segG, LOW);
-
-  // E
-  digitalWrite(segA, HIGH);
-  digitalWrite(segB, LOW);
-  digitalWrite(segC, LOW);
-  digitalWrite(segD, HIGH);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, HIGH);
-  digitalWrite(segG, HIGH);
+  digitalWrite(segG, LOW);
 delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
@@ -63,11 +46,28 @@ delay (temps);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
 
-  // R
+  // 1
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, HIGH);
+  digitalWrite(segC, HIGH);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+delay (temps);
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
   digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+
+  // 2
+  digitalWrite(segA, HIGH);
+  digitalWrite(segB, HIGH);
+  digitalWrite(segC, LOW);
+  digitalWrite(segD, HIGH);
   digitalWrite(segE, HIGH);
   digitalWrite(segF, LOW);
   digitalWrite(segG, HIGH);
@@ -80,12 +80,29 @@ delay (temps);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
   
-  // A
+  // 3
   digitalWrite(segA, HIGH);
   digitalWrite(segB, HIGH);
   digitalWrite(segC, HIGH);
+  digitalWrite(segD, HIGH);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, HIGH);
+delay (temps);
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, LOW);
+  digitalWrite(segC, LOW);
   digitalWrite(segD, LOW);
-  digitalWrite(segE, HIGH);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+
+  // 4
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, HIGH);
+  digitalWrite(segC, HIGH);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
   digitalWrite(segF, HIGH);
   digitalWrite(segG, HIGH);
 delay (temps);
@@ -97,13 +114,13 @@ delay (temps);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
 
-  // R
-  digitalWrite(segA, LOW);
+  // 5
+  digitalWrite(segA, HIGH);
   digitalWrite(segB, LOW);
-  digitalWrite(segC, LOW);
-  digitalWrite(segD, LOW);
-  digitalWrite(segE, HIGH);
-  digitalWrite(segF, LOW);
+  digitalWrite(segC, HIGH);
+  digitalWrite(segD, HIGH);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, HIGH);
   digitalWrite(segG, HIGH);
 delay (temps);
   digitalWrite(segA, LOW);
@@ -114,13 +131,47 @@ delay (temps);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
 
-  // D
+  // 6
   digitalWrite(segA, LOW);
+  digitalWrite(segB, LOW);
+  digitalWrite(segC, HIGH);
+  digitalWrite(segD, HIGH);
+  digitalWrite(segE, HIGH);
+  digitalWrite(segF, HIGH);
+  digitalWrite(segG, HIGH);
+delay (temps);
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, LOW);
+  digitalWrite(segC, LOW);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+  
+  // 7
+  digitalWrite(segA, HIGH);
+  digitalWrite(segB, HIGH);
+  digitalWrite(segC, HIGH);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+delay (temps);
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, LOW);
+  digitalWrite(segC, LOW);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+  
+  // 8
+  digitalWrite(segA, HIGH);
   digitalWrite(segB, HIGH);
   digitalWrite(segC, HIGH);
   digitalWrite(segD, HIGH);
   digitalWrite(segE, HIGH);
-  digitalWrite(segF, LOW);
+  digitalWrite(segF, HIGH);
   digitalWrite(segG, HIGH);
 delay (temps);
   digitalWrite(segA, LOW);
@@ -130,14 +181,23 @@ delay (temps);
   digitalWrite(segE, LOW);
   digitalWrite(segF, LOW);
   digitalWrite(segG, LOW);
-
   
-    // B11110110,Representa la g 
-    // B10011110,Representa la e 
-    // B00001010,Representa la r
-    // B11101110,Representa la a
-    // B00001010,Representa la r
-    // B01111010,Representa la d 
-
+  // 9
+  digitalWrite(segA, HIGH);
+  digitalWrite(segB, HIGH);
+  digitalWrite(segC, HIGH);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, HIGH);
+  digitalWrite(segG, HIGH);
+delay (temps);
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, LOW);
+  digitalWrite(segC, LOW);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+  
 }
 //*********************** FUNCTIONS ************************
